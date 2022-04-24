@@ -26,3 +26,19 @@ Promise.allSettled([promise1, promise2, promise3])
 //globalThis: 
 console.log(window);
 console.log(globalThis);
+
+//Operador Nulo.
+const food = 'aaron' ?? 'default string';
+console.log(food);
+
+//OptionalChange: Vamos a poder trabajar diferentes niveles de estos recursos, 
+//agregando un signo de pregunta.
+const user = {};
+console.log(user?.profile?.email);
+
+if(user?.profile?.email){
+    console.log('email');
+}else{
+    console.log('fail');
+}
+
